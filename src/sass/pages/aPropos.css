@@ -1,0 +1,39 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.apropos {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.apropos .banner .banner_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+.apropos .accordion-container {
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .apropos .banner {
+    height: 111px;
+  }
+  .apropos .aboutList-container {
+    width: 90%;
+  }
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.aboutList-container {
+  width: 80%;
+}/*# sourceMappingURL=aPropos.css.map */

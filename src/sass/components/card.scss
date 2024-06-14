@@ -1,0 +1,35 @@
+.card {
+  width: calc(33.33% - 10px); // Chaque carte prendra 33.33% de la largeur avec un espace de 10px entre les cartes
+
+
+  .card__image {
+    position: relative;
+    padding-top: 66.666%; // Ratio d'aspect 3:2 pour l'image, ajustable selon la taille souhaitée
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 10px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 30%; // Hauteur du dégradé noir
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent); // Dégradé noir
+    }
+
+    .card__title {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: white;
+      font-weight: bold;
+      z-index: 2;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}

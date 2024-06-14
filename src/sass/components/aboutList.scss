@@ -1,0 +1,56 @@
+.aboutList {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+    margin-bottom: 1rem;
+
+    &__header {
+        background-color: rgba(255, 96, 96, 1);
+        color: white;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        height: 1rem;
+
+        i {
+            margin-left: 10px;
+        }
+    }
+
+
+    &__content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+        padding: 0 15px;
+        background-color: #f7f7f7;
+
+        &--open {
+            max-height: 500px;
+            padding: 15px;
+        }
+    }
+
+    // Enlève le border quand l'accordion est ouvert
+    &.active {
+        border: none;
+
+        &__header {
+            border: none;
+        }
+    }
+
+    // Enlève le border quand l'accordion est fermé
+    &:not(.active) {
+        border: none;
+    }
+
+    @media (max-width: 768px) {
+        &__header {
+            height: 0.5rem;
+        }
+    }
+}

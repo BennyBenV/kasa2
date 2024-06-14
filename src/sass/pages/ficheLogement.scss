@@ -1,0 +1,109 @@
+.fiche-logement {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+    .logement-info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        &__details {
+            flex: 1;
+
+            p {
+                font-size: 2em;
+                color: rgba(255, 96, 96, 1);
+                margin: 0;
+            }
+
+            .location {
+                color: #555;
+                margin: 10px 0;
+                font-size: 1.2em;
+            }
+
+            .tags {
+                display: flex;
+                gap: 1rem;
+
+
+            }
+        }
+
+        .host-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-direction: column;
+
+            .host {
+                display: flex;
+                align-items: center;
+
+                &__name {
+                    font-size: 1.2em;
+                    color: rgba(255, 96, 96, 1);
+                    margin-right: 10px;
+                }
+
+                &__picture {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+
+            .rating {
+                display: flex;
+                align-items: center;
+
+
+            }
+        }
+    }
+
+    .accordions {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .accordion {
+            width: 50%;
+
+            ul {
+                padding-left: 0;
+            }
+
+        }
+
+        li {
+            list-style: none;
+        }
+
+
+    }
+
+    @media (max-width: 768px) {
+        .logement-info {
+            flex-direction: column;
+
+            .host-rating {
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
+        }
+
+        .accordions {
+            margin-top: 0;
+            gap: 0;
+            flex-direction: column;
+
+            .accordion {
+                width: 100%;
+            }
+        }
+    }
+}
