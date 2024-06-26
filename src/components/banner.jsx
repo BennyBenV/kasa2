@@ -1,5 +1,5 @@
 import React from 'react';
-import '../sass/components/banner.css';
+import '../sass/components/banner.scss';
 import paysage from '../assets/paysage.jpg';
 
 const Banner = () => {

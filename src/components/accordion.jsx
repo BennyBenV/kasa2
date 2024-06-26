@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../sass/components/accordion.css';
+import '../sass/components/accordion.scss';
 
 const Accordion = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);

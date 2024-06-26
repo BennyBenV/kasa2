@@ -1,7 +1,7 @@
 // Accueil.js
 import React from 'react';
 import Header from '../components/header'
-import '../sass/pages/accueil.css';
+import '../sass/pages/accueil.scss';
 import Banner from '../components/banner';
 import Gallery from '../components/gallery';
 import Footer from '../components/footer';

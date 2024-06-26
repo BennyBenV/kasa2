@@ -5,17 +5,21 @@ import Carrousel from '../components/carrousel';
 import Tag from '../components/tag';
 import Rating from '../components/rating';
 import Accordion from '../components/accordion';
-import '../sass/pages/ficheLogement.css';
+import '../sass/pages/ficheLogement.scss';
 import Footer from '../components/footer';
 import Header from '../components/header';
+import { Navigate } from "react-router-dom";
+
 
 const FicheLogement = () => {
   const { id } = useParams();
   const logement = logementsData.find(logement => logement.id === id);
 
   if (!logement) {
-    return <div>Logement non trouvé</div>;
+    // Si le logement n'existe pas, rediriger vers la page 404
+    return <Navigate to="/404" />;
   }
+
 
   return (
     <>

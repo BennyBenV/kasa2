@@ -31,8 +31,17 @@
     }
   }
 
-  @media (max-width: 768px) {
+  &__counter {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
 
+  @media (max-width: 768px) {
     &__image {
       height: 255px;
     }
@@ -49,5 +58,9 @@
       }
     }
 
+    &__counter {
+      font-size: 0.8rem;
+      padding: 3px 7px;
+    }
   }
 }

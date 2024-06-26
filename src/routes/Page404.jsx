@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/header'
 import Footer from '../components/footer';
-import '../sass/pages/page404.css';
+import '../sass/pages/page404.scss';
 import { Link } from 'react-router-dom';
 
 function Page404() {

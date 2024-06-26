@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../sass/components/aboutList.css';
+import '../sass/components/aboutList.scss';
 
 const AboutList = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);

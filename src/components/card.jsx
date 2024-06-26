@@ -1,5 +1,5 @@
 import React from 'react';
-import '../sass/components/card.css';
+import '../sass/components/card.scss';
 
 const Card = ({ id, title, cover }) => {
   return (
